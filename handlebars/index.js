@@ -6,6 +6,10 @@ const app = express()
 app.engine('handlebars', exphbs.engine())
 app.set('view engine', 'handlebars')
 
+app.get('/page', (req, res) =>{
+    res.render('page')
+})
+
 app.get('/', (req, res) => {
 
     const user = {
