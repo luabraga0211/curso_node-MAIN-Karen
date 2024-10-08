@@ -14,7 +14,9 @@ app.get('/', (req, res) => {
         email:'exemplo@gmail.com'
     }
 
-    res.render('home', {user: user}) /// envia os dados para o armazenamento da nuvem
+    const auth = true
+
+    res.render('home', { user: user, auth }) /// envia os dados para o armazenamento da nuvem
 })
 
 
