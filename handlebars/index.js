@@ -20,7 +20,9 @@ app.get('/', (req, res) => {
 
     const auth = true
 
-    res.render('home', { user: user, auth }) /// envia os dados para o armazenamento da nuvem
+    const approved = true
+
+    res.render('home', { user: user, auth, approved }) /// envia os dados para o armazenamento da nuvem
 })
 
 
